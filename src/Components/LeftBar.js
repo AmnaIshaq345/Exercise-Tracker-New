@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
+import "../css/style.min.css";
 
-export const LeftBar = () => {
+const LeftBar = () => {
     return (
         <>
         {/* <!-- ============================================================== -->
@@ -86,3 +87,4 @@ export const LeftBar = () => {
         </>
     )
 }
+export default LeftBar;

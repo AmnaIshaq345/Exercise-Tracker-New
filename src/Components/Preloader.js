@@ -1,6 +1,6 @@
 import React from 'react';
-
-export const Preloader = () => {
+import "../css/style.min.css";
+const Preloader = () => {
     return (
         <>
         
@@ -22,3 +22,4 @@ export const Preloader = () => {
         </>
     )
 }
+export default Preloader;

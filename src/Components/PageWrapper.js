@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
+import "../css/style.min.css";
 
-export const PageWrapper = () => {
+const PageWrapper = () => {
     return (
        <>
        {/* <!-- Page wrapper  -->
@@ -44,12 +45,10 @@ export const PageWrapper = () => {
                       <canvas
                         width="67"
                         height="30"
-                        style="
-                          display: inline-block;
-                          width: 67px;
-                          height: 30px;
-                          vertical-align: top;
-                        "
+                        style={{ display: "inline-block",
+                          width: "67px",
+                          height: "30px",
+                          verticalAlign: "top"}}
                       ></canvas>
                     </div>
                   </li>
@@ -68,12 +67,10 @@ export const PageWrapper = () => {
                       <canvas
                         width="67"
                         height="30"
-                        style="
-                          display: inline-block;
-                          width: 67px;
-                          height: 30px;
-                          vertical-align: top;
-                        "
+                        style={{display: "inline-block",
+                          width: "67px",
+                          height: "30px",
+                          verticalAlign: "top"}}
                       ></canvas>
                     </div>
                   </li>
@@ -92,12 +89,10 @@ export const PageWrapper = () => {
                       <canvas
                         width="67"
                         height="30"
-                        style="
-                          display: inline-block;
-                          width: 67px;
-                          height: 30px;
-                          vertical-align: top;
-                        "
+                        style={{display: "inline-block",
+                          width: "67px",
+                          height: "30px",
+                          verticalAlign: "top"}}
                       ></canvas>
                     </div>
                   </li>
@@ -146,24 +141,24 @@ export const PageWrapper = () => {
                         <td className="txt-oflo">Walk</td>
                         <td>Outdoor Activity</td>
                         <td>
-                          <div className="progress" style="height: 30px">
+                          <div className="progress" style={{height: "30px"}}>
                             <div
                               className="progress-bar progress-bar-danger"
                               role="progressbar"
                               aria-valuenow="70"
                               aria-valuemin="0"
                               aria-valuemax="100"
-                              style="width: 70%"
+                              style={{width: "70%"}}
                             ></div>
                           </div> 
-                          <div className="progress" style="height: 25px">
+                          <div className="progress" style={{height: "25px"}}>
                             <div
                               className="
                                 progress-bar progress-bar-striped
                                 bg-danger
                               "
                               role="progressbar"
-                              style="width: 75%"
+                              style={{width: "75%"}}
                               aria-valuenow="100"
                               aria-valuemin="0"
                               aria-valuemax="100"
@@ -200,3 +195,4 @@ export const PageWrapper = () => {
        </>
     )
 }
+export default PageWrapper;

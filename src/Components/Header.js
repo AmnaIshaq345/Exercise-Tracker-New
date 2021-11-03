@@ -1,9 +1,9 @@
 import React from 'react';
-import varun from "./plugins/images/varun.jpg";
-import NewProject from "plugins/images/New Project (1).png";
-import New from "plugins/images/New.ico";
-
-export const Header = () => {
+import varun from "../plugins/images/users/varun.jpg";
+import NewProject from "../plugins/images/NewProject.png";
+import New from "../plugins/images/New.ico";
+import "../css/style.min.css";
+const Header = () => {
     return (
        <>
             
@@ -19,7 +19,7 @@ export const Header = () => {
               </b>
              
               
-              <span className="logo-text" style="margin-left: -20px">
+              <span className="logo-text" style={{marginLeft: '-20px'}}>
                 
                 <img src={NewProject} alt="homepage" />
               </span>
@@ -78,3 +78,4 @@ export const Header = () => {
        </>
     )
 }
+export default Header;

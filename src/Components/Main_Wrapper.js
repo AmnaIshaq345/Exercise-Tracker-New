@@ -1,4 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Header from "./Header";
+import "../css/style.min.css";
+import Preloader from './Preloader';
+import LeftBar from './LeftBar';
+import { Errorbox } from './Errorbox';
+import PageContent from './PageContent';
+import PageWrapper from './PageWrapper';
+
 
 const Main_Wrapper = () => {
     return (
@@ -11,9 +19,16 @@ const Main_Wrapper = () => {
       data-sidebar-position="absolute"
       data-header-position="absolute"
       data-boxed-layout="full"
-    ></div>
+    >
+        <Header />
+        {/* <Preloader /> */}
+        {/* <Errorbox /> */}
+        <LeftBar />
+        {/* <PageContent /> */}
+        <PageWrapper />
+    </div>
         </>
     )
 }
 
-export default Main_Wrapper
+export default Main_Wrapper;
